@@ -17,6 +17,9 @@ public class RelativeLocators {
 		// Syntax : driver.findElement(with.TagName("XX").above(WebElement)
 		// Tag name is optional -> By.cssSelector("[name='name']")
 		
+		// Friendly locators
+		
+		// Above
 		WebElement nameEditBox = driver.findElement(By.cssSelector("[name='name']"));
 		System.out.println(driver.findElement(with(By.tagName("label")).above(nameEditBox)).getText());
 		

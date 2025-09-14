@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import static org.openqa.selenium.support.locators.RelativeLocator.*;
 
 
-public class RelativeLocators {
+public class FriendlyLocators {
 
 	public static void main(String[] args) {
 		System.setProperty("webdriver.chrome.driver", "C:\\Selenium Webdriver\\chromedriver-win64\\chromedriver.exe");
@@ -35,9 +35,7 @@ public class RelativeLocators {
 		WebElement rdb = driver.findElement(By.id("inlineRadio1")); 
 		System.out.println(driver.findElement(with(By.tagName("label")).toRightOf(rdb)).getText());
 		
-		
-
-
+	
 	}
 
 }

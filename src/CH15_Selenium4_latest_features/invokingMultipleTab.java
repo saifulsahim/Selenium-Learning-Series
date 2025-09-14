@@ -31,6 +31,7 @@ public class invokingMultipleTab {
 		String childWindowId = it.next();
 		driver.switchTo().window(childWindowId);
 		driver.get("https://rahulshettyacademy.com");
+		//Using regular expression to find out first course name always
 		String courseName = driver.findElements(By.cssSelector("a[href*='https://courses.rahulshettyacademy.com/p']"))
 				.get(1).getText();
 		driver.switchTo().window(parentWindowId);

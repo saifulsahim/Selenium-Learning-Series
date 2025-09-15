@@ -9,7 +9,7 @@ public class day4 {
 	}
 	
 	@Test
-	public void mobileLogInHomeLoan() {
+	public void MobileLogInHomeLoan() {
 		System.out.println("mobileLogInHomeLoan");
 	}
 	

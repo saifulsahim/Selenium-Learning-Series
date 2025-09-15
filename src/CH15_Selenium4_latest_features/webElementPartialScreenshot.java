@@ -43,6 +43,8 @@ public class webElementPartialScreenshot {
 		
 		/*
 		 * Capture Webelement Screenshot using Selenium
+		 * for that Common IO maven or jar file is needed
+		 * Final stage, logo png file is created
 		 */
 
 		File file = name.getScreenshotAs(OutputType.FILE);

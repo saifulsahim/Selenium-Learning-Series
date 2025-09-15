@@ -28,7 +28,7 @@
 					
 					<!--Using regular expression to remove Mobile related like
 					30 test case from day 2 -->
-					<exclude name="mobile.*"></exclude>
+					<exclude name="API.*"></exclude>
 				</methods>
 			</class>
 		</classes>

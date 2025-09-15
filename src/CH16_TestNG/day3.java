@@ -36,7 +36,7 @@ public class day3 {
 
 	}
 	
-	@Test
+	@Test(groups= {"Smoke"})
 	public void mobileLogInCarLoan() {
 		System.out.println("mobileLogInCarLoan");
 	}
@@ -57,8 +57,8 @@ public class day3 {
 	}
 	
 	@Test
-	public void LogInCarLoan() {
-		System.out.println("LogInCarLoan");
+	public void APICarLoan() {
+		System.out.println("APICarLoan");
 	}
 
 }

@@ -46,17 +46,21 @@ public class day3 {
 		System.out.println("I am number one");
 	}
 	
-	@Test
+	//enabled=false -> will skip the test case
+	@Test(enabled=false)
 	public void mobileSingInCarLoan() {
 		System.out.println("mobileSingInCarLoan");
 	}
 	
-	@Test
+	// will not fail till 40 seconds of your execution
+	@Test(timeOut=4000)
 	public void mobileSignOutLoan() {
 		System.out.println("mobileSignOutLoan");
 	}
 	
-	@Test
+	
+	// APICarLoan() depends on WebLogInCarLoan So WebLogInCarLoan execute first then APICarLoan
+	@Test(dependsOnMethods= {"WebLogInCarLoan","mobileSignOutLoan"})
 	public void APICarLoan() {
 		System.out.println("APICarLoan");
 	}

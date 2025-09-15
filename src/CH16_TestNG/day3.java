@@ -1,5 +1,6 @@
 package CH16_TestNG;
 
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 public class day3 {
@@ -11,6 +12,11 @@ public class day3 {
 	@Test
 	public void mobileLogInCarLoan() {
 		System.out.println("mobileLogInCarLoan");
+	}
+	
+	@BeforeSuite
+	public void bfSuite() {
+		System.out.println("I am number one");
 	}
 	
 	@Test

@@ -1,5 +1,6 @@
 package CH16_TestNG;
 
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
@@ -20,6 +21,11 @@ public class runTestCaseWithoutJavaCompiler {
 	@Test
 	public void Demo() {
 		System.out.println("Hello");
+	}
+	
+	@AfterSuite
+	public void afSuite() {
+		System.out.println("I am no 1 from last");
 	}
  
 	@Test

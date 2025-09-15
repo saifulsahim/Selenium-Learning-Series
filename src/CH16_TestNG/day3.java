@@ -13,6 +13,15 @@ public class day3 {
 		System.out.println("mobileLogInCarLoan");
 	}
 	
+	@Test
+	public void mobileSingInCarLoan() {
+		System.out.println("mobileSingInCarLoan");
+	}
+	
+	@Test
+	public void mobileSignOutLoan() {
+		System.out.println("mobileSignOutLoan");
+	}
 	
 	@Test
 	public void LogInCarLoan() {

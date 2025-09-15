@@ -8,5 +8,6 @@ public class day2 {
 	public void Demo() {
 		System.out.println("Day 2");
 	}
+		
 
 }

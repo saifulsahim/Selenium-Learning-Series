@@ -1,45 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="9" passed="7" failed="0" skipped="0">
+<testng-results ignored="4" total="11" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-15T16:47:33 GMT+06:00" name="Loan department" finished-at="2025-09-15T16:47:33 GMT+06:00" duration-ms="304">
+  <suite started-at="2025-09-15T19:43:45 GMT+06:00" name="Loan department" finished-at="2025-09-15T19:43:45 GMT+06:00" duration-ms="266">
     <groups>
     </groups>
-    <test started-at="2025-09-15T16:47:33 GMT+06:00" name="Personal Loan" finished-at="2025-09-15T16:47:33 GMT+06:00" duration-ms="112">
+    <test started-at="2025-09-15T19:43:45 GMT+06:00" name="Personal Loan" finished-at="2025-09-15T19:43:45 GMT+06:00" duration-ms="105">
       <class name="CH16_TestNG.day4">
-        <test-method signature="LogInHomeLoan()[pri:0, instance:CH16_TestNG.day4@1d2adfbe]" started-at="2025-09-15T16:47:33 GMT+06:00" name="LogInHomeLoan" finished-at="2025-09-15T16:47:33 GMT+06:00" duration-ms="4" status="PASS">
+        <test-method signature="LogInHomeLoan()[pri:0, instance:CH16_TestNG.day4@1d2adfbe]" started-at="2025-09-15T19:43:45 GMT+06:00" name="LogInHomeLoan" finished-at="2025-09-15T19:43:45 GMT+06:00" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LogInHomeLoan -->
-        <test-method signature="WebLogInHomeLoan()[pri:0, instance:CH16_TestNG.day4@1d2adfbe]" started-at="2025-09-15T16:47:33 GMT+06:00" name="WebLogInHomeLoan" finished-at="2025-09-15T16:47:33 GMT+06:00" duration-ms="1" status="PASS">
+        <test-method signature="WebLogInHomeLoan()[pri:0, instance:CH16_TestNG.day4@1d2adfbe]" started-at="2025-09-15T19:43:45 GMT+06:00" name="WebLogInHomeLoan" finished-at="2025-09-15T19:43:45 GMT+06:00" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- WebLogInHomeLoan -->
-        <test-method signature="mobileLogInHomeLoan()[pri:0, instance:CH16_TestNG.day4@1d2adfbe]" started-at="2025-09-15T16:47:33 GMT+06:00" name="mobileLogInHomeLoan" finished-at="2025-09-15T16:47:33 GMT+06:00" duration-ms="2" status="PASS">
+        <test-method signature="mobileLogInHomeLoan()[pri:0, instance:CH16_TestNG.day4@1d2adfbe]" started-at="2025-09-15T19:43:45 GMT+06:00" name="mobileLogInHomeLoan" finished-at="2025-09-15T19:43:45 GMT+06:00" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mobileLogInHomeLoan -->
       </class> <!-- CH16_TestNG.day4 -->
       <class name="CH16_TestNG.day2">
-        <test-method signature="Demo()[pri:0, instance:CH16_TestNG.day2@49ec71f8]" started-at="2025-09-15T16:47:33 GMT+06:00" name="Demo" finished-at="2025-09-15T16:47:33 GMT+06:00" duration-ms="2" status="PASS">
+        <test-method signature="Demo()[pri:0, instance:CH16_TestNG.day2@49ec71f8]" started-at="2025-09-15T19:43:45 GMT+06:00" name="Demo" finished-at="2025-09-15T19:43:45 GMT+06:00" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Demo -->
       </class> <!-- CH16_TestNG.day2 -->
       <class name="CH16_TestNG.runTestCaseWithoutJavaCompiler">
-        <test-method signature="Demo()[pri:0, instance:CH16_TestNG.runTestCaseWithoutJavaCompiler@399f45b1]" started-at="2025-09-15T16:47:33 GMT+06:00" name="Demo" finished-at="2025-09-15T16:47:33 GMT+06:00" duration-ms="22" status="PASS">
+        <test-method signature="Demo()[pri:0, instance:CH16_TestNG.runTestCaseWithoutJavaCompiler@399f45b1]" started-at="2025-09-15T19:43:45 GMT+06:00" name="Demo" finished-at="2025-09-15T19:43:45 GMT+06:00" duration-ms="18" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Demo -->
       </class> <!-- CH16_TestNG.runTestCaseWithoutJavaCompiler -->
     </test> <!-- Personal Loan -->
-    <test started-at="2025-09-15T16:47:33 GMT+06:00" name="Car Loan" finished-at="2025-09-15T16:47:33 GMT+06:00" duration-ms="14">
+    <test started-at="2025-09-15T19:43:45 GMT+06:00" name="Car Loan" finished-at="2025-09-15T19:43:45 GMT+06:00" duration-ms="12">
       <class name="CH16_TestNG.day3">
-        <test-method signature="LogInCarLoan()[pri:0, instance:CH16_TestNG.day3@59474f18]" started-at="2025-09-15T16:47:33 GMT+06:00" name="LogInCarLoan" finished-at="2025-09-15T16:47:33 GMT+06:00" duration-ms="3" status="PASS">
+        <test-method signature="LogInCarLoan()[pri:0, instance:CH16_TestNG.day3@3e694b3f]" started-at="2025-09-15T19:43:45 GMT+06:00" name="LogInCarLoan" finished-at="2025-09-15T19:43:45 GMT+06:00" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LogInCarLoan -->
-        <test-method signature="WebLogInCarLoan()[pri:0, instance:CH16_TestNG.day3@59474f18]" started-at="2025-09-15T16:47:33 GMT+06:00" name="WebLogInCarLoan" finished-at="2025-09-15T16:47:33 GMT+06:00" duration-ms="2" status="PASS">
+        <test-method signature="WebLogInCarLoan()[pri:0, instance:CH16_TestNG.day3@3e694b3f]" started-at="2025-09-15T19:43:45 GMT+06:00" name="WebLogInCarLoan" finished-at="2025-09-15T19:43:45 GMT+06:00" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- WebLogInCarLoan -->

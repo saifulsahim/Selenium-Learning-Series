@@ -5,6 +5,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -15,11 +16,12 @@ public class day3 {
 		System.out.println("Before executing any methods in the class");
 
 	}
-	@Parameters({"URL"})
+	@Parameters({"URL","APIKey/username"})
 	@Test
-	public void WebLogInCarLoan(String urlName) {
+	public void WebLogInCarLoan(String urlName, String Key) {
 		System.out.println("WebLogInCarLoan");
 		System.out.println(urlName);
+		System.out.println(Key); 
 		
 	}
 	
@@ -62,11 +64,44 @@ public class day3 {
 		System.out.println("mobileSignOutLoan");
 	}
 	
+	@Test(dataProvider="getData")
+	public void mobileSignOutLoan2(String username, String password) {
+		System.out.println("mobileSignOutLoan2");
+		System.out.println(username);
+		System.out.println(password);
+	}
+	
 	
 	// APICarLoan() depends on WebLogInCarLoan So WebLogInCarLoan execute first then APICarLoan
 	@Test(dependsOnMethods= {"WebLogInCarLoan","mobileSignOutLoan"})
 	public void APICarLoan() {
 		System.out.println("APICarLoan");
+	}
+	@DataProvider
+	public Object[][] getData()
+	{
+		/*
+		 * 1st combination -> username password -> good credit history -> row
+		 * 2nd combination-> username password -> no credit history 
+		 * 3rd -> Fraudelent credit
+		 * [3] -> 3 combinations
+		 * [2] -> username & password
+		 */
+		Object[][] data = new Object[3][2];
+		//1st set
+		data[0][0] ="firstSetUserName";		
+		data[0][1] ="password";		
+		// Columns in the row are nothing but values for that particular combination 
+		
+		// 2nd set
+		data[1][0] ="SecondSetUserName";		
+		data[1][1] ="secondPassword";	
+		
+		// 3nd set
+		data[2][0] ="ThirdSetUserName";		
+		data[2][1] ="thirdPassword";	
+		return data;
+				
 	}
 
 }

@@ -5,6 +5,7 @@
 
 	<test thread-count="5" name="Personal Loan">
 		<parameter name="URL" value="personalloan.com"></parameter>
+
 		<classes>
 			<class name="CH16_TestNG.runTestCaseWithoutJavaCompiler">
 				<methods>
@@ -20,6 +21,7 @@
 
 	<test name="Car Loan">
 		<parameter name="URL" value="carloan.com"></parameter>
+				<parameter name="APIKey/username" value="123456"></parameter>
 
 		<classes>
 			<class name="CH16_TestNG.day3">

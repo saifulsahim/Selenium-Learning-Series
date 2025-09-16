@@ -1,5 +1,6 @@
 package CH16_TestNG;
 
+import org.testng.Assert;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
@@ -21,6 +22,8 @@ public class runTestCaseWithoutJavaCompiler {
 	@Test
 	public void Demo() {
 		System.out.println("Hello");
+		Assert.assertTrue(false);
+
 	}
 	
 	@AfterSuite

@@ -5,6 +5,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class day3 {
@@ -14,9 +15,12 @@ public class day3 {
 		System.out.println("Before executing any methods in the class");
 
 	}
+	@Parameters({"URL"})
 	@Test
-	public void WebLogInCarLoan() {
+	public void WebLogInCarLoan(String urlName) {
 		System.out.println("WebLogInCarLoan");
+		System.out.println(urlName);
+		
 	}
 	
 	@BeforeMethod

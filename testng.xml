@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Loan department">
-
+<!--	<parameter name="URL" value="qaclickacademy.com"></parameter>-->
 
 	<test thread-count="5" name="Personal Loan">
+		<parameter name="URL" value="personalloan.com"></parameter>
 		<classes>
 			<class name="CH16_TestNG.runTestCaseWithoutJavaCompiler">
 				<methods>
@@ -18,6 +19,8 @@
 	</test>
 
 	<test name="Car Loan">
+		<parameter name="URL" value="carloan.com"></parameter>
+
 		<classes>
 			<class name="CH16_TestNG.day3">
 				<methods>
@@ -25,7 +28,7 @@
 					mobileLogInCarLoan test case-->
 
 					<!--  <exclude name="mobileLogInCarLoan"></exclude>-->
-					
+
 					<!--Using regular expression to remove Mobile related like
 					30 test case from day 2 -->
 					<exclude name="API.*"></exclude>

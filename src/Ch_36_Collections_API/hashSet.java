@@ -1,6 +1,7 @@
 package Ch_36_Collections_API;
 
 import java.util.HashSet;
+import java.util.Iterator;
 
 public class hashSet {
 
@@ -14,9 +15,17 @@ public class hashSet {
 		hs.add("UK");
 		hs.add("UAE");
 		hs.add("UAE");
-		hs.remove("UAE");
+		hs.add("Jordan");
+		//.remove("UAE");
 		hs.isEmpty();
 		hs.size();
 		System.out.println(hs);	
+		
+		// Iterator
+		Iterator<String> i =hs.iterator();
+		while(i.hasNext())
+		{
+			System.out.println(i.next());
+		}
 	}
 }

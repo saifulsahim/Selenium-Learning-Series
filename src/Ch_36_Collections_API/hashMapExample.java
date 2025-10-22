@@ -27,7 +27,7 @@ public class hashMapExample {
 			/*
 			 * Output : 0=Hello 1=World 2=Sahim 3=Fahim
 			 */
-			Map.Entry mp= (Map.Entry)it.next();
+			Map.Entry mp= (Map.Entry)it.next(); 
 			System.out.println(mp.getKey());
 			System.out.println(mp.getValue());
 		}

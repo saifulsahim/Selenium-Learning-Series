@@ -2,6 +2,11 @@ package CH_34_java_OOP_basics_part_1.Inheritence;
 
 public class childClassDemo extends parentClassDemo {
 	
+	public void audioSystem()
+	{
+		System.out.println("New engine code is implemeneted");
+	}
+	
 	public void engine()
 	{
 		System.out.println("New Engine");
@@ -15,6 +20,7 @@ public class childClassDemo extends parentClassDemo {
 		// TODO Auto-generated method stub
 		childClassDemo cd = new childClassDemo();
 		cd.color();
+		cd.audioSystem();
 	}
 
 }

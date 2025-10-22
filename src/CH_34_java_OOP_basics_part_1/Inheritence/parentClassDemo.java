@@ -14,7 +14,7 @@ public class parentClassDemo {
 	}
 	public void audioSystem()
 	{
-		System.out.println("brakes code is implemeneted");
+		System.out.println("audio code is implemeneted");
 	}
 
 

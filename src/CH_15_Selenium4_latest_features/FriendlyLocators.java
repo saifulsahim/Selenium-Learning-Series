@@ -1,4 +1,4 @@
-package CH15_Selenium4_latest_features;
+package CH_15_Selenium4_latest_features;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

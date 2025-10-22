@@ -1,4 +1,4 @@
-package CH16_TestNG;
+package CH_16_TestNG;
 
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;

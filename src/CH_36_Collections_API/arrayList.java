@@ -1,4 +1,4 @@
-package Ch_36_Collections_API;
+package CH_36_Collections_API;
 
 import java.util.ArrayList;
 

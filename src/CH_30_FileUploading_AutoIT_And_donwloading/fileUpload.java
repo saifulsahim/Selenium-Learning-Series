@@ -1,4 +1,4 @@
-package CH30_FileUploading_AutoIT_And_donwloading;
+package CH_30_FileUploading_AutoIT_And_donwloading;
 
 import java.io.File;
 import java.io.IOException;

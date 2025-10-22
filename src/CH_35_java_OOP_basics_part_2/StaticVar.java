@@ -1,4 +1,4 @@
- package CH35_java_OOP_basics_part_2;
+ package CH_35_java_OOP_basics_part_2;
 
 public class StaticVar {
 	String name;

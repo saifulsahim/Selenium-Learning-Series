@@ -5,13 +5,17 @@ import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 
 public class advancedLocators {
 
 	public static void main(String[] args) throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver", "C:\\Selenium Webdriver\\chromedriver-win64\\chromedriver.exe");
+		//WebDriver driver = new FirefoxDriver();
 		WebDriver driver = new ChromeDriver();
+		//WebDriver driver = new EdgeDriver();
 		
 		String name = "Miqdad";
 		String password= getPassword(driver);

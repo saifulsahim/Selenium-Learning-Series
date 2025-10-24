@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class idAndNameLocators {
+public class idNameClassNameCssSelectorsLocators {
 
 	public static void main(String[] args) {
 		System.setProperty("webdriver.chrome.driver", "C:\\Selenium Webdriver\\chromedriver-win64\\chromedriver.exe");
@@ -14,6 +14,16 @@ public class idAndNameLocators {
 		driver.findElement(By.id("inputUsername")).sendKeys("rahul");
 		driver.findElement(By.name("inputPassword")).sendKeys("hello123");
 		driver.findElement(By.className("signInBtn")).click();
-	}
-
+		System.out.println(driver.findElement(By.cssSelector("p.error")).getText());
+	}	
 }
+
+/*
+CssSelector -> 
+	className -> tagname.classname ->   Button.signInBtn -> .error-> here Tagname is optional
+	Id -> tagname#id      -> Example  input#inputUsername
+	Tagname[attribute=’value’]
+	<input type="text" placeholder="Username” value=" "> -> example ->Input [placeholder=’ Username’]
+
+*/
+

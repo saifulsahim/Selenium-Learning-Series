@@ -18,16 +18,24 @@ public class idNameClassNameCssSelectorsLocators {
 		driver.findElement(By.name("inputPassword")).sendKeys("hello123");
 		driver.findElement(By.className("signInBtn")).click();
 		System.out.println(driver.findElement(By.cssSelector("p.error")).getText());
+		driver.findElement(By.linkText("Forgot your password?")).click();
+		
+		driver.findElement(By.xpath("//input[@placeholder='Name']")).sendKeys("Jhon");
 	}	
 }
 
 /*
 implicit wait -> globally
-CssSelector -> 
+  CssSelector -> 
 	className -> tagname.classname ->   Button.signInBtn -> .error-> here Tagname is optional
 	Id -> tagname#id      -> Example  input#inputUsername
 	Tagname[attribute=’value’]
 	<input type="text" placeholder="Username” value=" "> -> example ->Input [placeholder=’ Username’]
 
+  Xpath –
+
+	//Tagname[@attribute=’value’]
+  	//input[@placeholder=’ Username’]
+	
 */
 

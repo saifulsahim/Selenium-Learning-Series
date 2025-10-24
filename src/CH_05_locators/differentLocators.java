@@ -30,6 +30,13 @@ public class differentLocators {
 		driver.findElement(By.cssSelector(".reset-pwd-btn")).click();
 		System.out.println(driver.findElement(By.cssSelector("form p")).getText());
 		
+		driver.findElement(By.xpath("//div[@class='forgot-pwd-btn-conainer']/button[1]")).click(); // traverse from parent to child
+		
+		driver.findElement(By.cssSelector("#inputUsername")).sendKeys("test"); // using id made cssSelector #id i.e #inputUsername
+		driver.findElement(By.cssSelector("input[type*='pass']")).sendKeys("rahulshettyacademy"); // using regular expression by cssSelector
+		driver.findElement(By.id("chkboxOne")).click();
+		driver.findElement(By.xpath("//button[contains(@class,'submit')]")).click(); // using regular expression by xpath
+		 
 	}	
 }
 
@@ -52,6 +59,9 @@ implicit wait -> globally
 	<input type="text" placeholder="Username” value=" "> -> example ->Input [placeholder=’ Username’]
 	Tagname[attribute=’value’]:nth-child(index)
 	Parenttagname childtagname // travering parent to child tag
+	In customized cssSelector regular expression is very easy just use * i.e ->input[type*='pass']
+
+	In customized cssSelector or xpath , you have to give full class name
 
   Xpath –
 
@@ -59,8 +69,11 @@ implicit wait -> globally
   	    //input[@placeholder=’ Username’]
   		//Tagname[@attribute=’value’][index]
   		//parentTagname/childTagname // travering parent to child tag
-  		 
-  	 
+  		In customized xpath regular expression is tricky -> 
+  				//button[@class='submit signInBtn'] it is xpath 
+  				//button[contains(@class,'submit')]
+  				 
+
 	
 */
 

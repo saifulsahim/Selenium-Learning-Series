@@ -1,5 +1,7 @@
 package CH_05_locators;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -11,6 +13,7 @@ public class idNameClassNameCssSelectorsLocators {
 
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://rahulshettyacademy.com/locatorspractice/");
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.findElement(By.id("inputUsername")).sendKeys("rahul");
 		driver.findElement(By.name("inputPassword")).sendKeys("hello123");
 		driver.findElement(By.className("signInBtn")).click();
@@ -19,6 +22,7 @@ public class idNameClassNameCssSelectorsLocators {
 }
 
 /*
+implicit wait -> globally
 CssSelector -> 
 	className -> tagname.classname ->   Button.signInBtn -> .error-> here Tagname is optional
 	Id -> tagname#id      -> Example  input#inputUsername

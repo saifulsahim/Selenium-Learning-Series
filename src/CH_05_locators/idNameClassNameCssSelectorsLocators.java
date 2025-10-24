@@ -21,10 +21,24 @@ public class idNameClassNameCssSelectorsLocators {
 		driver.findElement(By.linkText("Forgot your password?")).click();
 		
 		driver.findElement(By.xpath("//input[@placeholder='Name']")).sendKeys("Jhon");
+		driver.findElement(By.cssSelector("input[placeholder='Email']")).sendKeys("jhon@email.com");
+		driver.findElement(By.xpath("//input[@type='text'][2]")).clear();
+		driver.findElement(By.cssSelector("input[type='text']:nth-child(3)")).sendKeys("jhondoe@email.com");
+
 	}	
 }
 
 /*
+ID
+Xpath
+CSS Selector
+name
+Class Name
+Tag Name
+Link Text
+Partial Link Text
+
+
 implicit wait -> globally
   CssSelector -> 
 	className -> tagname.classname ->   Button.signInBtn -> .error-> here Tagname is optional
@@ -35,7 +49,9 @@ implicit wait -> globally
   Xpath –
 
 	//Tagname[@attribute=’value’]
-  	//input[@placeholder=’ Username’]
+  	   //input[@placeholder=’ Username’]
+  		//Tagname[@attribute=’value’][index]
+  	 
 	
 */
 

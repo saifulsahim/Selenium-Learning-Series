@@ -45,6 +45,7 @@ implicit wait -> globally
 	Id -> tagname#id      -> Example  input#inputUsername
 	Tagname[attribute=’value’]
 	<input type="text" placeholder="Username” value=" "> -> example ->Input [placeholder=’ Username’]
+	Tagname[attribute=’value’]:nth-child(index)
 
   Xpath –
 

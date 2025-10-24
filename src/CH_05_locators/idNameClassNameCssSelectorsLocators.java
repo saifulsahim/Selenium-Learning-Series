@@ -13,7 +13,7 @@ public class idNameClassNameCssSelectorsLocators {
 
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://rahulshettyacademy.com/locatorspractice/");
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5)); // globally applicable for each line
 		driver.findElement(By.id("inputUsername")).sendKeys("rahul");
 		driver.findElement(By.name("inputPassword")).sendKeys("hello123");
 		driver.findElement(By.className("signInBtn")).click();

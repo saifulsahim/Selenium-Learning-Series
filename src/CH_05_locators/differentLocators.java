@@ -6,7 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class idNameClassNameCssSelectorsLocators {
+public class differentLocators {
 
 	public static void main(String[] args) {
 		System.setProperty("webdriver.chrome.driver", "C:\\Selenium Webdriver\\chromedriver-win64\\chromedriver.exe");
@@ -16,15 +16,20 @@ public class idNameClassNameCssSelectorsLocators {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5)); // globally applicable for each line
 		driver.findElement(By.id("inputUsername")).sendKeys("rahul");
 		driver.findElement(By.name("inputPassword")).sendKeys("hello123");
-		driver.findElement(By.className("signInBtn")).click();
+		driver.findElement(By.className("signInBtn")).click(); 
 		System.out.println(driver.findElement(By.cssSelector("p.error")).getText());
 		driver.findElement(By.linkText("Forgot your password?")).click();
 		
 		driver.findElement(By.xpath("//input[@placeholder='Name']")).sendKeys("Jhon");
 		driver.findElement(By.cssSelector("input[placeholder='Email']")).sendKeys("jhon@email.com");
-		driver.findElement(By.xpath("//input[@type='text'][2]")).clear();
-		driver.findElement(By.cssSelector("input[type='text']:nth-child(3)")).sendKeys("jhondoe@email.com");
+		driver.findElement(By.xpath("//input[@type='text'][2]")).clear(); // customized xpath using index
+		driver.findElement(By.cssSelector("input[type='text']:nth-child(3)")).sendKeys("jhondoe@email.com"); // customized css using index
 
+		
+		driver.findElement(By.xpath("//form/input[3]")).sendKeys("5515151515"); // Generating xpaths with parent to child tags traverse
+		driver.findElement(By.cssSelector(".reset-pwd-btn")).click();
+		System.out.println(driver.findElement(By.cssSelector("form p")).getText());
+		
 	}	
 }
 
@@ -46,12 +51,15 @@ implicit wait -> globally
 	Tagname[attribute=’value’]
 	<input type="text" placeholder="Username” value=" "> -> example ->Input [placeholder=’ Username’]
 	Tagname[attribute=’value’]:nth-child(index)
+	Parenttagname childtagname // travering parent to child tag
 
   Xpath –
 
-	//Tagname[@attribute=’value’]
-  	   //input[@placeholder=’ Username’]
+		//Tagname[@attribute=’value’]
+  	    //input[@placeholder=’ Username’]
   		//Tagname[@attribute=’value’][index]
+  		//parentTagname/childTagname // travering parent to child tag
+  		 
   	 
 	
 */

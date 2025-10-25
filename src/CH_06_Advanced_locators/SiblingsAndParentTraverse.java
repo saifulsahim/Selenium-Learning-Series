@@ -12,9 +12,14 @@ public class SiblingsAndParentTraverse {
 		driver.get("https://rahulshettyacademy.com/AutomationPractice/");
 		//header/div/button[1]/following-sibling::button[1] 
 		driver.findElement(By.xpath("//header/div/button[1]/following-sibling::button[1]")).click();
+		System.out.println(driver.findElement(By.xpath("//header/div/button[1]/following-sibling::button[1]")).getText());
 	}
 
 }
 // Absolute xpath -> means only one slash / -> means starting from root
 // relative xpath-> starting from somewhere i.e double slash //
+/*
+ * //header/div/button[1]/ -> trtaversing from parent to child
+ * following-sibling::button[1] -> traversing from one sibling to another sibling
+ */
 

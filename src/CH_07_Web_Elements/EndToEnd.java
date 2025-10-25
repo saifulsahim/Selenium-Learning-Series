@@ -15,10 +15,10 @@ public class EndToEnd {
 
 		// Select from,to,current date, 5 adults, clicking senior citizenship, then click search
 		driver.findElement(By.id("ctl00_mainContent_rbtnl_Trip_0")).click(); //selecting radio button one way first
-		driver.findElement(By.id("ctl00_mainContent_ddl_originStation1_CTXT")).click();
-		driver.findElement(By.xpath("//a[@value='BLR']")).click();
+		driver.findElement(By.id("ctl00_mainContent_ddl_originStation1_CTXT")).click(); // from dropdwon select
+		driver.findElement(By.xpath("//a[@value='BLR']")).click(); // from destination
 		Thread.sleep(1000);
-		driver.findElement(By.xpath("//div[@id='glsctl00_mainContent_ddl_destinationStation1_CTNR'] //a[@value='DEL']")).click(); 
+		driver.findElement(By.xpath("//div[@id='glsctl00_mainContent_ddl_destinationStation1_CTNR'] //a[@value='DEL']")).click(); // to destination 
 		driver.findElement(By.cssSelector(".ui-state-default.ui-state-active")).click(); // clicking current date of calendar
 
 		if(driver.findElement(By.id("Div1")).getAttribute("style").contains("0.5")) {
@@ -28,17 +28,17 @@ public class EndToEnd {
 			Assert.assertTrue(false);
 		}
 		driver.findElement(By.cssSelector("input[id*='SeniorCitizenDiscount']")).click(); //using regular expression clicking checkbox
-		driver.findElement(By.id("divpaxinfo")).click();
+		driver.findElement(By.id("divpaxinfo")).click(); // passenger dropdown click
 		Thread.sleep(2000);
 		int i = 1;
 		while (i < 5) {
 			driver.findElement(By.id("hrefIncAdt")).click(); 
 			i++;
 		}
-		driver.findElement(By.id("btnclosepaxoption")).click();
+		driver.findElement(By.id("btnclosepaxoption")).click(); // after selecting 5 adults then click close
 		Assert.assertEquals(driver.findElement(By.id("divpaxinfo")).getText(), "5 Adult");
 		
-		driver.findElement(By.cssSelector("#ctl00_mainContent_btn_FindFlights")).click();
+		driver.findElement(By.cssSelector("#ctl00_mainContent_btn_FindFlights")).click(); // search button click
 		//driver.findElement(By.cssSelector("input[value='Search']")).click(); // using customized css
 
 		// driver.findElement(By.xpath("//input[@value='Search']")).click(); // using customized xpath

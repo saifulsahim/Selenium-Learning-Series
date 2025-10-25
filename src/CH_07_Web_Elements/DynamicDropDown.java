@@ -17,8 +17,10 @@ public class DynamicDropDown {
 		driver.findElement(By.id("ctl00_mainContent_ddl_originStation1_CTXT")).click();
 		driver.findElement(By.xpath("//a[@value='BLR']")).click();
 		Thread.sleep(2000);
-		//driver.findElement(By.xpath("(//a[@value='DEL'])[2]")).click(); // Index 2 is used because Selenium counts options from the top (starting at 0), so “Delhi” is the 2nd item in the dropdown "To".
-		driver.findElement(By.xpath("//div[@id='glsctl00_mainContent_ddl_destinationStation1_CTNR'] //a[@value='DEL']")).click();
+		driver.findElement(By.xpath("(//a[@value='DEL'])[2]")).click(); // Index 2 is used because Selenium counts options from the top (starting at 0), so “Delhi” is the 2nd item in the dropdown "To".
+		
+		// Parent-child relationship locator to identify objects uniquely
+		//driver.findElement(By.xpath("//div[@id='glsctl00_mainContent_ddl_destinationStation1_CTNR'] //a[@value='DEL']")).click();
 		////div[@id='glsctl00_mainContent_ddl_originStation1_CTNR\'] //a[@value='BLR']
 		////div[@id='glsctl00_mainContent_ddl_destinationStation1_CTNR\'] //a[@value='BLR']
 

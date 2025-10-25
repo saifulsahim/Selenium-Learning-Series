@@ -11,8 +11,13 @@ public class SiblingsAndParentTraverse {
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://rahulshettyacademy.com/AutomationPractice/");
 		//header/div/button[1]/following-sibling::button[1] 
-		driver.findElement(By.xpath("//header/div/button[1]/following-sibling::button[1]")).click();
-		System.out.println(driver.findElement(By.xpath("//header/div/button[1]/following-sibling::button[1]")).getText());
+		driver.findElement(By.xpath("//header/div/button[1]/following-sibling::button[1]")).click(); // Traversing from parent to child then siblings
+		//System.out.println(driver.findElement(By.xpath("//header/div/button[1]/following-sibling::button[1]")).getText());
+	
+		//header/div/button[1]/parent::div
+		driver.findElement(By.xpath("//header/div/button[1]/parent::div/button[3]")).click(); // Traversing from child to parent
+		System.out.println(driver.findElement(By.xpath("//header/div/button[1]/parent::div/button[3]")).getText());
+		
 	}
 
 }
@@ -21,5 +26,7 @@ public class SiblingsAndParentTraverse {
 /*
  * //header/div/button[1]/ -> trtaversing from parent to child
  * following-sibling::button[1] -> traversing from one sibling to another sibling
+ * 
+ * Traversing parent to child then from back to parent is not possible in Css
  */
 

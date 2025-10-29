@@ -17,6 +17,10 @@ public class AdditemsToCart {
 		Thread.sleep(3000);
 		String[] items = { "Cucumber", "Brocolli", "Pumpkin", "Beans" };
 		addItems(driver, items);
+		driver.findElement(By.cssSelector("img[alt='Cart']")).click(); //clicking cart button
+		//driver.findElement(By.xpath("//button[contains(text(),'PROCEED TO CHECKOUT')]")).click();
+		driver.findElement(By.xpath("//button[text()='PROCEED TO CHECKOUT']")).click(); //another xpath 
+		driver.findElement(By.cssSelector(".promoCode")).sendKeys("rahulshettyacademy");
 	}
 
 	public static void addItems(WebDriver driver, String[] items) {

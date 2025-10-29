@@ -15,10 +15,13 @@ public class AdditemsToCart {
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://rahulshettyacademy.com/seleniumPractise/");
 		Thread.sleep(3000);
-		String[] items = { "Cucumber", "Brocolli", "Pumpkin", "Beans"};
-		int j =0;
-		List<WebElement> products = driver.findElements(By.cssSelector(".product-name"));
+		String[] items = { "Cucumber", "Brocolli", "Pumpkin", "Beans" };
+		addItems(driver, items);
+	}
 
+	public static void addItems(WebDriver driver, String[] items) {
+		List<WebElement> products = driver.findElements(By.cssSelector(".product-name"));
+		int j = 0;
 		int i = 0;
 		while (i < products.size()) {
 			// Brocolli - 1 kg
@@ -28,17 +31,16 @@ public class AdditemsToCart {
 			// check whether name you extracted is present in arrayList or not-
 			// convert array into array list for easy search
 			List itemsList = Arrays.asList(items);
-			
+
 			if (itemsList.contains(formattedName)) {
 				j++;
 				driver.findElements(By.xpath("//div[@class='product-action']/button")).get(i).click();
-				if(j==items.length) {
+				if (j == items.length) {
 					break;
 				}
 			}
 			i++;
 		}
-
 	}
 
 }

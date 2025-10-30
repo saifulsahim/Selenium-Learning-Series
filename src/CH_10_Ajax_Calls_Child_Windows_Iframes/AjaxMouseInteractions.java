@@ -20,9 +20,10 @@ public class AjaxMouseInteractions {
 		Actions a = new Actions(driver);
 		WebElement move = driver.findElement(By.cssSelector("div[id='nav-link-accountList']"));
 		
-		a.moveToElement(driver.findElement(By.id("twotabsearchtextbox"))).click().keyDown(Keys.SHIFT).sendKeys("hello").doubleClick().build().perform();
+		a.moveToElement(driver.findElement(By.id("twotabsearchtextbox"))).click().keyDown(Keys.SHIFT).sendKeys("hello")
+		.doubleClick().build().perform(); // double click to select whole text
 		//Move to specific element
-		a.moveToElement(move).contextClick().build().perform();
+		a.moveToElement(move).contextClick().build().perform(); // right click on mouse button
 	}
 
 }

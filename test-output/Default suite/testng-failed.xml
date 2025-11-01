@@ -3,18 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="CH16_TestNG.day3">
+      <class name="CH_14_Java_Streams.BasicStreams">
         <methods>
-          <include name="mobileSignOutLoan"/>
-          <include name="APICarLoan"/>
-          <include name="WebLogInCarLoan"/>
-          <include name="beforeEvery"/>
-          <include name="afterEvery"/>
-          <include name="bfSuite"/>
-          <include name="beforeCls"/>
-          <include name="afterCls"/>
+          <include name="streamCollect"/>
         </methods>
-      </class> <!-- CH16_TestNG.day3 -->
+      </class> <!-- CH_14_Java_Streams.BasicStreams -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

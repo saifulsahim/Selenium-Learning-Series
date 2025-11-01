@@ -30,7 +30,7 @@ public class AutomateBrokenLinks {
 			
 			URI uri = URI.create(url);                    // String → URI
 			HttpURLConnection conn = (HttpURLConnection) uri.toURL().openConnection();  // URI → URL → Conn
-			//HttpURLConnection conn = (HttpURLConnection)new URL(url).openConnection();
+			//HttpURLConnection conn = (HttpURLConnection)new URL(url).openConnection(); // Depreciated 
 			conn.setRequestMethod("HEAD");
 			conn.connect();
 			int respCode = conn.getResponseCode();

@@ -5,7 +5,7 @@
     <classes>
       <class name="CH_14_Java_Streams.BasicStreams">
         <methods>
-          <include name="streamCollect"/>
+          <include name="streamMap"/>
         </methods>
       </class> <!-- CH_14_Java_Streams.BasicStreams -->
     </classes>

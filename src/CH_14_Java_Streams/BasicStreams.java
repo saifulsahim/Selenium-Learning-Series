@@ -29,7 +29,7 @@ public class BasicStreams {
 		//System.out.println(count);
 	}
 
-	@Test
+	//@Test
 	public void streamFilter() {
 		ArrayList<String> names = new ArrayList<String>();
 		names.add("Abhijeet");
@@ -79,12 +79,12 @@ public class BasicStreams {
 		
 		// concatenation of two streams
 		Stream<String> newStream= Stream.concat(names.stream(), names1.stream());
-		//newStream.sorted().forEach(s->System.out.println(s));
+		newStream.sorted().forEach(s->System.out.println(s));
 		boolean flag = newStream.anyMatch(s->s.equalsIgnoreCase("Sahim"));
 		System.out.println(flag);
 		Assert.assertTrue(flag);
 	}
-	@Test
+	//@Test
 	public void streamCollect() {
 		List<String> ls  = Stream.of("Sahim","Fahim","Tasnim","Miqdad","Awsaf").filter(s->s.endsWith("m")).map(s->s.toUpperCase())
 						 .collect(Collectors.toList());

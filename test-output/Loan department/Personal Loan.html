@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Personal Loan</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>4/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>9/3/1</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Sep 17 00:22:31 GMT+06:00 2025</td>
+<td>Started on:</td><td>Sat Nov 08 18:40:03 GMT+06:00 2025</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (157 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (267 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -70,78 +70,227 @@ function toggleAllBoxes() {
 <table width='100%' border='1' class='invocation-failed'>
 <tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='CH16_TestNG.runTestCaseWithoutJavaCompiler.Demo()'><b>Demo</b><br>Test class: CH16_TestNG.runTestCaseWithoutJavaCompiler</td>
+<td title='CH_16_TestNG.runTestCaseWithoutJavaCompiler.Demo()'><b>Demo</b><br>Test class: CH_16_TestNG.runTestCaseWithoutJavaCompiler</td>
 <td><div><pre>java.lang.AssertionError: expected [true] but found [false]
-	at CH16_TestNG.runTestCaseWithoutJavaCompiler.Demo(runTestCaseWithoutJavaCompiler.java:25)
+	at CH_16_TestNG.runTestCaseWithoutJavaCompiler.Demo(runTestCaseWithoutJavaCompiler.java:25)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1575)
-... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1049394565", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1049394565'><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertTrue(Assert.java:45)
-	at org.testng.Assert.assertTrue(Assert.java:55)
-	at CH16_TestNG.runTestCaseWithoutJavaCompiler.Demo(runTestCaseWithoutJavaCompiler.java:25)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace65586123", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace65586123'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at CH_16_TestNG.runTestCaseWithoutJavaCompiler.Demo(runTestCaseWithoutJavaCompiler.java:25)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1575)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
-<td>CH16_TestNG.runTestCaseWithoutJavaCompiler@bcec361</td></tr>
+<td>CH_16_TestNG.runTestCaseWithoutJavaCompiler@7c1e2a9e</td></tr>
+<tr>
+<td title='CH_16_TestNG.day4.WebLogInHomeLoan()'><b>WebLogInHomeLoan</b><br>Test class: CH_16_TestNG.day4</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;URL&apos; is required by @Test on method WebLogInHomeLoan but has not been marked @Optional or defined
+in F:\Selenium\Selenium_Learning_Series\testng2.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1855026648", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1855026648'><pre>org.testng.TestNGException: 
+Parameter &apos;URL&apos; is required by @Test on method WebLogInHomeLoan but has not been marked @Optional or defined
+in F:\Selenium\Selenium_Learning_Series\testng2.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:264)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:885)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:734)
+	at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+	at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:949)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>CH_16_TestNG.day4@6236eb5f</td></tr>
+<tr>
+<td title='CH_16_TestNG.day3.WebLogInCarLoan()'><b>WebLogInCarLoan</b><br>Test class: CH_16_TestNG.day3</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;URL&apos; is required by @Test on method WebLogInCarLoan but has not been marked @Optional or defined
+in F:\Selenium\Selenium_Learning_Series\testng2.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1876682596", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1876682596'><pre>org.testng.TestNGException: 
+Parameter &apos;URL&apos; is required by @Test on method WebLogInCarLoan but has not been marked @Optional or defined
+in F:\Selenium\Selenium_Learning_Series\testng2.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:264)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:885)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:734)
+	at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+	at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:949)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>CH_16_TestNG.day3@394a2528</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='CH16_TestNG.day2.Demo()'><b>Demo</b><br>Test class: CH16_TestNG.day2</td>
+<td title='CH_16_TestNG.day4.MobileLogInHomeLoan()'><b>MobileLogInHomeLoan</b><br>Test class: CH_16_TestNG.day4</td>
 <td></td>
 <td>0</td>
-<td>CH16_TestNG.day2@1c1bbc4e</td></tr>
+<td>CH_16_TestNG.day4@6236eb5f</td></tr>
 <tr>
-<td title='CH16_TestNG.day4.WebLogInHomeLoan()'><b>WebLogInHomeLoan</b><br>Test class: CH16_TestNG.day4<br>Parameters: personalloan.com</td>
+<td title='CH_16_TestNG.day3.mobileSignOutLoan2()'><b>mobileSignOutLoan2</b><br>Test class: CH_16_TestNG.day3<br>Parameters: firstSetUserName, password</td>
 <td></td>
 <td>0</td>
-<td>CH16_TestNG.day4@55fe41ea</td></tr>
+<td>CH_16_TestNG.day3@394a2528</td></tr>
 <tr>
-<td title='CH16_TestNG.day4.LogInHomeLoan()'><b>LogInHomeLoan</b><br>Test class: CH16_TestNG.day4</td>
+<td title='CH_16_TestNG.day3.mobileSignOutLoan2()'><b>mobileSignOutLoan2</b><br>Test class: CH_16_TestNG.day3<br>Parameters: SecondSetUserName, secondPassword</td>
 <td></td>
 <td>0</td>
-<td>CH16_TestNG.day4@55fe41ea</td></tr>
+<td>CH_16_TestNG.day3@394a2528</td></tr>
 <tr>
-<td title='CH16_TestNG.day4.MobileLogInHomeLoan()'><b>MobileLogInHomeLoan</b><br>Test class: CH16_TestNG.day4</td>
+<td title='CH_16_TestNG.day4.LogInHomeLoan()'><b>LogInHomeLoan</b><br>Test class: CH_16_TestNG.day4</td>
 <td></td>
 <td>0</td>
-<td>CH16_TestNG.day4@55fe41ea</td></tr>
+<td>CH_16_TestNG.day4@6236eb5f</td></tr>
+<tr>
+<td title='CH_16_TestNG.day3.mobileLogInCarLoan()'><b>mobileLogInCarLoan</b><br>Test class: CH_16_TestNG.day3</td>
+<td></td>
+<td>0</td>
+<td>CH_16_TestNG.day3@394a2528</td></tr>
+<tr>
+<td title='CH_16_TestNG.day3.mobileSignOutLoan2()'><b>mobileSignOutLoan2</b><br>Test class: CH_16_TestNG.day3<br>Parameters: ThirdSetUserName, thirdPassword</td>
+<td></td>
+<td>0</td>
+<td>CH_16_TestNG.day3@394a2528</td></tr>
+<tr>
+<td title='CH_16_TestNG.runTestCaseWithoutJavaCompiler.ndTest()'><b>ndTest</b><br>Test class: CH_16_TestNG.runTestCaseWithoutJavaCompiler</td>
+<td></td>
+<td>0</td>
+<td>CH_16_TestNG.runTestCaseWithoutJavaCompiler@7c1e2a9e</td></tr>
+<tr>
+<td title='CH_16_TestNG.day2.Demo()'><b>Demo</b><br>Test class: CH_16_TestNG.day2</td>
+<td></td>
+<td>0</td>
+<td>CH_16_TestNG.day2@a1cdc6d</td></tr>
+<tr>
+<td title='CH_16_TestNG.day3.mobileSignOutLoan()'><b>mobileSignOutLoan</b><br>Test class: CH_16_TestNG.day3</td>
+<td></td>
+<td>0</td>
+<td>CH_16_TestNG.day3@394a2528</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='CH_16_TestNG.day3.APICarLoan()'><b>APICarLoan</b><br>Test class: CH_16_TestNG.day3</td>
+<td><div><pre>java.lang.Throwable: Method CH_16_TestNG.day3.APICarLoan() on instance CH_16_TestNG.day3@394a2528 depends on not successfully finished methods 
+[CH_16_TestNG.day3.mobileSignOutLoan() on instance CH_16_TestNG.day3@394a2528
+CH_16_TestNG.day3.WebLogInCarLoan() on instance CH_16_TestNG.day3@394a2528]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1409160703", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1409160703'><pre>java.lang.Throwable: Method CH_16_TestNG.day3.APICarLoan() on instance CH_16_TestNG.day3@394a2528 depends on not successfully finished methods 
+[CH_16_TestNG.day3.mobileSignOutLoan() on instance CH_16_TestNG.day3@394a2528
+CH_16_TestNG.day3.WebLogInCarLoan() on instance CH_16_TestNG.day3@394a2528]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>CH_16_TestNG.day3@394a2528</td></tr>
 </table><p>
 </body>
 </html>

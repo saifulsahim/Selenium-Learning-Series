@@ -5,7 +5,7 @@
 	<test thread-count="5" name="Personal Loan">
 <!--	Running test case by package folder. This is useful for regression test-->
 		<packages>
-			<package name="CH16_TestNG"></package>
+			<package name="CH_16_TestNG"></package>
 		</packages>
 	</test>
 </suite> 

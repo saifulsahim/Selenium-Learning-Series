@@ -11,10 +11,10 @@
 	  		</run>
 	  </groups>
 		<classes>
-			<class name="CH16_TestNG.runTestCaseWithoutJavaCompiler"></class>
-			<class name="CH16_TestNG.day2"></class>
-			<class name="CH16_TestNG.day4"></class>	
-			<class name="CH16_TestNG.day3"></class>
+			<!--<class name="CH_16_TestNG.runTestCaseWithoutJavaCompiler"></class>-->
+			<class name="CH_16_TestNG.day2"></class>
+			<class name="CH_16_TestNG.day4"></class>	
+			<class name="CH_16_TestNG.day3"></class>
 		</classes>
 	</test>
 </suite> 

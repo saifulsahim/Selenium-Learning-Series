@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Loan department" parallel="tests" thread-count="6">
 	<listeners>
-		<listener class-name="CH16_TestNG.Listeners">
+		<listener class-name="CH_16_TestNG.Listeners">
 		</listener>
 	</listeners>
 <!--	<parameter name="URL" value="qaclickacademy.com"></parameter>-->
@@ -11,15 +11,15 @@
 		<parameter name="URL" value="personalloan.com"></parameter>
 
 		<classes>
-			<class name="CH16_TestNG.runTestCaseWithoutJavaCompiler">
+			<class name="CH_16_TestNG.runTestCaseWithoutJavaCompiler">
 				<methods>
 					<!--      		include only Demo method to show only Demo test case-->
 					<include name="Demo"></include>
 				</methods>
 
 			</class>
-			<class name="CH16_TestNG.day2"></class>
-			<class name="CH16_TestNG.day4"></class>
+			<class name="CH_16_TestNG.day2"></class>
+			<class name="CH_16_TestNG.day4"></class>
 		</classes>
 	</test>
 
@@ -28,7 +28,7 @@
 				<parameter name="APIKey/username" value="123456"></parameter>
 
 		<classes>
-			<class name="CH16_TestNG.day3">
+			<class name="CH_16_TestNG.day3">
 				<methods>
 					<!-- Exclude only mobileLogInCarLoan method  not to show
 					mobileLogInCarLoan test case-->

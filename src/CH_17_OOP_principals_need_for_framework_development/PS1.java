@@ -14,6 +14,10 @@ public class PS1  extends PS{
 		PS2 b = new PS2(3); // Parameterised constructor
 		System.out.println(b.increment());
 		System.out.println(b.decrement());
+		
+		//PS3 c = new PS3(3); // Parameterised constructor
+		System.out.println(b.multiplyTwo());
+		
 	}
 	
 
